@@ -1,0 +1,209 @@
+@import "theme.css";
+@import "inputs.css";
+@import "buttons.css";
+@import "login.css";
+@import "fonts.css";
+@import "input-cancel-button.css";
+
+html {
+    height: 100%;
+}
+p{
+    margin-bottom: 24px;
+}
+body {
+    margin: 0;
+    min-height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: "Tinkoff Sans", sans-serif;
+    font-weight: 500;
+}
+
+
+.header {
+    height: var(--header-height);
+    background-color: rgba(246, 247, 248, 1);
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: stretch;
+}
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+.header__content::after {
+    content: '';
+    position: absolute;
+    left: var(--container-padding);
+    right: var(--container-padding);
+    bottom: 0;
+    height: 1px;
+    background-color: rgba(	0, 16, 36, 0.12);
+}
+
+.header__logo-img {
+    height: calc(var(--header-height)/2.15);
+    cursor: pointer;
+}
+
+.header__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.header__search-container {
+    display: flex;
+    align-items: center;
+}
+.header__search {
+    display: flex;
+    align-items: center;
+}
+
+.header__search input {
+    background-color: var(--bg-neutral-1);
+    border-radius: 8px;
+    font-size: 13px;
+    font-family: NeueHaasUnicaW1G-Regular;
+    font-weight: 400;
+    color: var(--text-secondary);
+    border: none;
+    padding: 6px 10px;
+    width: 320px;
+    max-height: 32px;
+    margin-left: 32px;
+
+}
+.header__search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.header__auth {
+    display: flex;
+}
+
+.header__button{
+    padding: 0;
+    font-family: NeueHaasUnicaW1G-Regular;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.header__button--profile{
+    padding-left: 16px;
+}
+.header__search {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.content {
+    flex: 1 0 auto;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+.news-feed__publication {
+    margin-top: 65px;
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    padding: 20px 24px 24px;
+    border-radius: 20px;
+    box-shadow: 0 6px 34px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+}
+
+.news-feed__author {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.news-feed__author-img {
+    max-height: 24px;
+    max-width: 24px;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.news-feed__author-name {
+    color: #333;
+    font-size: 24px;
+    font-family: "Tinkoff Sans", sans-serif;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0;
+}
+
+.news-feed__text {
+    font-family: "NeueHaasUnicaW1G-Regular";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0;
+
+}
+
+.news-feed__interaction {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+.news-feed__like,
+.news-feed__comment {
+    flex: 0 0 auto;
+    padding: 10px;
+}
+
+.news-feed__like {
+    display: flex;
+    align-items: center;
+}
+
+.like-count {
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: 8px;
+}
+
+.news-feed__comment-text,
+.news-feed__comment-count{
+    font-family: NeueHaasUnicaW1G-Regular;
+    font-size: 15px;
+    line-height: 20px;
+
+}
+

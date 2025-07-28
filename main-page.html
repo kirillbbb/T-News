@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header class="header">
+    <div class="header__content container">
+        <div class="header__logo">
+            <img class="header__logo-img" src="/icons/tui-logo-siteheader.svg" alt="T-News Logo">
+
+        </div>
+        <div class="header__actions" id="headerActions">
+
+
+            <div class="header__search-container" id="searchContainer"></div>
+            <div class="header__auth" id="authContainer"></div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="news-feed container">
+        <article class="news-feed__publication">
+            <div class="news-feed__author">
+                <img class="news-feed__author-img"src="icons/default-avatar-profile-icon-vector-600nw-1745180411.jpg" alt="photo author">
+                <span class="news-feed__author-name">Author</span>
+            </div>
+            <div class="news-feed__text">
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                </p>
+            </div>
+            <div class="news-feed__interaction">
+                <button class="news-feed__like button primary" id="likeButton">
+                    <img src="/icons/button-heart.svg" alt="Лайк">
+                    <span class="like-count">21</span>
+                </button>
+                <button class="news-feed__comment button secondary" id="commentButton">
+                    <span class="news-feed__comment-text">Комментарий</span>
+                    <span class="news-feed__comment-count">1</span>
+                </button>
+
+
+            </div>
+        </article>
+    </section>
+    <section class="news-feed container 2 ">
+        <div class="news-feed__publication 2">
+
+        </div>
+    </section>
+</main>
+<script src="authCheck.js"></script>
+<script src="authChange.js"></script>
+</body>
+</html>
