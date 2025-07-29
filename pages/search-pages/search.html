@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск: <!-- Вставка запроса --></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Результаты поиска для <!-- Вставка запроса -->">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<header class="header">
+    <div class="header__content container">
+        <div class="header__logo">
+            <img class="header__logo-img" src="/icons/tui-logo-siteheader.svg" alt="T-News Logo">
+        </div>
+        <div class="header__actions" id="headerActions">
+            <div class="header__search-container" id="searchContainer">
+                <form action="/search" method="GET" class="header__search" role="search">
+                    <input type="text" name="q" placeholder="Поиск по T-News" value="<!-- Вставка запроса -->" required>
+                    <button type="submit" class="header__search-button">
+                        <img src="/icons/search-icon.svg" alt="Поиск">
+                    </button>
+                </form>
+            </div>
+            <div class="header__auth" id="authContainer"></div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="search-results container">
+        <h2>Результаты поиска: <span><!-- Вставка запроса --></span></h2>
+        <div class="search-tabs">
+            <button class="search-tab active" data-type="users">Пользователи</button>
+            <button class="search-tab" data-type="posts">Посты</button>
+        </div>
+        <div class="search-content">
+            <!-- Секция для пользователей -->
+            <div class="search-content__users">
+                <div class="search-result-item">
+                    <img src="../../icons/default-avatar-profile-icon-vector-600nw-1745180411.jpg" alt="photo" class="search-result-avatar">
+                    <span class="search-result-name">Алексей Иванов</span>
+                </div>
+                <div class="search-result-item">
+                    <img src="../../icons/default-avatar-profile-icon-vector-600nw-1745180411.jpg" alt="photo" class="search-result-avatar">
+                    <span class="search-result-name">Мария Петрова</span>
+                </div>
+                <div class="search-result-item">
+                    <img src="../../icons/default-avatar-profile-icon-vector-600nw-1745180411.jpg" alt="photo" class="search-result-avatar">
+                    <span class="search-result-name">Дмитрий Сидоров</span>
+                </div>
+            </div>
+            <!-- Секция для постов -->
+            <div class="search-content__posts">
+                <article class="news-feed__publication">
+                    <div class="news-feed__author">
+                        <img class="news-feed__author-img" src="../../icons/default-avatar-profile-icon-vector-600nw-1745180411.jpg" alt="photo author">
+                        <span class="news-feed__author-name">Author</span>
+                    </div>
+                    <div class="news-feed__text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        </p>
+                    </div>
+                    <div class="news-feed__interaction">
+                        <button class="news-feed__like button primary" id="likeButton">
+                            <img src="/icons/button-heart.svg" alt="Лайк">
+                            <span class="like-count">21</span>
+                        </button>
+                        <button class="news-feed__comment button secondary" id="commentButton">
+                            <span class="news-feed__comment-text">Комментарий</span>
+                            <span class="news-feed__comment-count">1</span>
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="../../authCheck.js"></script>
+<script src="../../authChange.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const tabs = document.querySelectorAll('.search-tab');
+        const contents = document.querySelectorAll('.search-content__users, .search-content__posts');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                contents.forEach(c => c.classList.remove('active'));
+                tab.classList.add('active');
+                const contentType = tab.getAttribute('data-type');
+                document.querySelector(`.search-content__${contentType}`).classList.add('active');
+            });
+        });
+
+        tabs[0].classList.add('active');
+        document.querySelector('.search-content__users').classList.add('active');
+    });
+</script>
+</body>
+</html>

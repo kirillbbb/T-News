@@ -1,10 +1,11 @@
 @import "theme.css";
 @import "inputs.css";
 @import "buttons.css";
-@import "login.css";
+@import "pages/login-pages/login.css";
 @import "fonts.css";
 @import "input-cancel-button.css";
-
+@import "pages/search-pages/search.css";
+@import "pages/profile-pages/profile.css";
 html {
     height: 100%;
 }
@@ -206,4 +207,5 @@ body {
     line-height: 20px;
 
 }
+
 

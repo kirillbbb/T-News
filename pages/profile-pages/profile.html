@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../style.css">
+  <title>Profile</title>
+</head>
+<body>
+<header class="header">
+  <div class="header__content container">
+    <div class="header__logo">
+      <img class="header__logo-img" src="/icons/tui-logo-siteheader.svg" alt="Logo">
+    </div>
+    <div class="header__actions" id="headerActions">
+      <div class="header__search-container" id="searchContainer"></div>
+      <div class="header__auth" id="authContainer"></div>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="profile container">
+    <article class="profile__post">
+      <div class="profile__layout">
+        <div class="profile__avatar-column">
+          <img class="profile__author-img" src="/icons/default-avatar-profile-icon-vector-600nw-1745180411.jpg" alt="Profile Photo">
+          <button class="profile__edit-photo">Изменить фото</button>
+        </div>
+        <div class="profile__info-column">
+          <span class="profile__author-name">Луций Анней Сенеба</span>
+          <div class="profile__bio">
+            <p>Обо мне: римский философ-стоик, поэт и государственный деятель. Воспитатель Нерона и один из крупнейших представителей стоицизма. Сын Луция (Марка) Аннея Сенеки Старшего (выдающегося ритора и историка) и Гельвии, младший брат Новия Галлиона. Автор «Нравственных писем к Луцилию», ряда философских трактатов и трагедий</p>
+          </div>
+        </div>
+        <div class="profile__follow-column">
+          <span class="profile__follow">Подписаться</span>
+        </div>
+      </div>
+
+      <div class="profile__input">
+        <textarea placeholder="Введите свой пост..."></textarea>
+        <button class="profile__submit button primary">Отправить</button>
+      </div>
+    </article>
+  </section>
+</main>
+<script src="../../authCheck.js"></script>
+<script src="../../authChange.js"></script>
+</body>
+</html>

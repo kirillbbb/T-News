@@ -1,0 +1,162 @@
+
+.profile__post {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.profile__layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 44px;
+    margin-bottom: 74px;
+    gap: 22px;
+}
+
+.profile__avatar-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+
+.profile__author-img {
+    width: 128px;
+    height: 128px;
+    border-radius: 64px;
+
+}
+
+.profile__edit-photo {
+    max-height: 32px;
+    border:none;
+    padding: 8px 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--bg-accent-2);
+    cursor: pointer;
+    font-family: NeueHaasUnicaW1G-Regular;
+    font-size: 13px;
+    line-height: 16px;
+    gap: 2px;
+}
+
+.profile__info-column {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.profile__author-name {
+    font-size: 24px;
+    font-family: "Tinkoff Sans", sans-serif;
+    font-weight: 500;
+    line-height: 28px;
+    color: #333;
+}
+
+.profile__bio {
+    margin: 0;
+    padding: 0;
+    max-height: 132px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-shrink: 0;
+    margin-right: 47px;
+}
+
+.profile__bio p {
+    margin: 0;
+    font-family: "NeueHaasUnicaW1G-Regular";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.profile__follow-column {
+    display: flex;
+    align-items: flex-start;
+}
+
+.profile__follow {
+    padding: 8px 10px;
+    border: 1px solid var(--border-normal);
+    border-radius: 10px;
+    color: var(--text-action);
+    background: none;
+    cursor: pointer;
+    font-family: NeueHaasUnicaW1G-Regular;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+
+}
+
+.profile__interaction {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+.profile__like,
+.profile__comment {
+    flex: 0 0 auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.like-count {
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: 8px;
+}
+
+.profile__comment-text,
+.profile__comment-count {
+    font-family: "NeueHaasUnicaW1G-Regular";
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.profile__input {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.profile__input textarea {
+
+    height: 136px;
+    padding: 16px;
+    border-radius: 12px;
+    border:none;
+    background-color: var(--bg-neutral-1);
+    font-family: "NeueHaasUnicaW1G-Regular";
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--text-secondary);
+    resize: none;
+}
+
+.profile__submit {
+    width: 100px;
+    padding: 4px 8px;
+    background-color: var(--bg-accent-1);
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    margin-left: auto;
+}
+
+.profile__submit:hover {
+    background-color: var(--bg-accent-hover);
+}

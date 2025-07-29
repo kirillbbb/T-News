@@ -6,7 +6,10 @@
     --bg-focus-1: rgba(125, 135, 151, 0.10);
     --bg-active-1: rgba(169, 182, 197, 0.25);
 
+
+    --bg-accent-2: #428BF9;
     --border-neutral-1: rgb(80, 80, 80);
+    --border-normal: rgba(0, 10, 24, 0.12);
 
     --text-primary: rgba(0, 0, 0, 0.75);
     --text-secondary: rgba(0, 0, 0, 0.54);
@@ -14,10 +17,11 @@
     --text-action: rgba(18, 109, 247, 1);
 
     --header-height: 64px;
-
-
     --header-horizontal: 13.4vw;
     --header-padding: 48px;
 
     --container-padding: 13.4vw;
+
+
+    --text-action: #126DF7;
 }

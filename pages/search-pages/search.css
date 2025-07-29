@@ -1,0 +1,74 @@
+
+.search-results {
+    margin-top: 65px;
+}
+
+.search-results h2 {
+    font-family: "Tinkoff Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.search-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-tab {
+    padding: 8px 16px;
+    border: none;
+    background-color: #f6f7f8;
+    border-radius: 8px;
+    font-family: "NeueHaasUnicaW1G-Regular";
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+.search-tab.active {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+.search-content {
+    display: none;
+}
+
+.search-content__users,
+.search-content__posts {
+    display: none; /* Изначально скрыты */
+}
+
+.search-content__users.active,
+.search-content__posts.active {
+    display: block;
+}
+
+.search-result-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.search-result-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.search-result-name {
+    font-family: "Tinkoff Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
