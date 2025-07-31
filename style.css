@@ -1,17 +1,20 @@
-@import "theme.css";
-@import "inputs.css";
-@import "buttons.css";
-@import "pages/login-pages/login.css";
-@import "fonts.css";
-@import "input-cancel-button.css";
-@import "pages/search-pages/search.css";
-@import "pages/profile-pages/profile.css";
+@import "css/theme.css";
+@import "css/inputs.css";
+@import "css/buttons.css";
+@import "../pages/login-pages/login.css";
+@import "css/fonts.css";
+@import "css/input-cancel-button.css";
+@import "../pages/search-pages/search.css";
+@import "../pages/profile-pages/profile.css";
+
 html {
     height: 100%;
 }
-p{
+
+p {
     margin-bottom: 24px;
 }
+
 body {
     margin: 0;
     min-height: 100%;
@@ -21,7 +24,6 @@ body {
     font-weight: 500;
 }
 
-
 .header {
     height: var(--header-height);
     background-color: rgba(246, 247, 248, 1);
@@ -30,11 +32,11 @@ body {
     display: flex;
     align-items: stretch;
 }
+
 .header__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     position: relative;
 }
 
@@ -45,7 +47,7 @@ body {
     right: var(--container-padding);
     bottom: 0;
     height: 1px;
-    background-color: rgba(	0, 16, 36, 0.12);
+    background-color: rgba(0, 16, 36, 0.12);
 }
 
 .header__logo-img {
@@ -59,10 +61,12 @@ body {
     justify-content: space-between;
     flex-grow: 1;
 }
+
 .header__search-container {
     display: flex;
     align-items: center;
 }
+
 .header__search {
     display: flex;
     align-items: center;
@@ -80,18 +84,20 @@ body {
     width: 320px;
     max-height: 32px;
     margin-left: 32px;
-
 }
+
 .header__search-button {
     background: none;
     border: none;
     cursor: pointer;
 }
+
 .header__auth {
     display: flex;
 }
 
-.header__button{
+.header__button {
+    text-decoration: none;
     padding: 0;
     font-family: NeueHaasUnicaW1G-Regular;
     font-weight: 400;
@@ -106,14 +112,27 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 8px; /* Расстояние между текстом и иконкой */
 }
-.header__button--profile{
+
+.header__button--profile {
     padding-left: 16px;
 }
-.header__search {
-    display: flex;
-    align-items: center;
+
+.auth-icon{
+    width: 24px; /* Размер иконки */
+    height: 24px;
+
+}
+.profile-icon {
+    width: 32px; /* Размер иконки */
+    height: 32px;
+    /* Ты добавишь свои иконки, например: background-image: url('/icons/login-icon.svg'); */
+    /* или замени на <img> в authCheck.js */
+}
+
+.header__button:hover {
+    color: #171717; /* Пример эффекта при наведении */
 }
 
 .container {
@@ -131,6 +150,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .news-feed__publication {
     margin-top: 65px;
     box-sizing: border-box;
@@ -174,7 +194,6 @@ body {
     font-size: 15px;
     line-height: 24px;
     letter-spacing: 0;
-
 }
 
 .news-feed__interaction {
@@ -201,11 +220,8 @@ body {
 }
 
 .news-feed__comment-text,
-.news-feed__comment-count{
+.news-feed__comment-count {
     font-family: NeueHaasUnicaW1G-Regular;
     font-size: 15px;
     line-height: 20px;
-
 }
-
-

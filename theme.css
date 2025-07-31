@@ -5,9 +5,8 @@
     --bg-accent-active: rgb(163, 139, 21);
     --bg-focus-1: rgba(125, 135, 151, 0.10);
     --bg-active-1: rgba(169, 182, 197, 0.25);
-
-
     --bg-accent-2: #428BF9;
+
     --border-neutral-1: rgb(80, 80, 80);
     --border-normal: rgba(0, 10, 24, 0.12);
 
@@ -22,6 +21,4 @@
 
     --container-padding: 13.4vw;
 
-
-    --text-action: #126DF7;
 }
