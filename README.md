@@ -6,10 +6,14 @@
 
 Скачать/склонировать папку<br/>
 
-В терминале перейти в папку бэка: cd T-News/T-News-backend<br/>
+В терминале перейти в папку бэка: cd T-News/T-News-backend  <br/>
 
 Запустить: npm start
 
 Открыть T-News\pages\registration-pages\registration.html<br/>
+
+Чтобы зайти под профилем Луций Анней Сенека нажмите Войти, либо откройте login,html
+Логин:AnneySeneka Пароль:AnneySeneka
+
 
 Либо же main-page,чтобы смотреть без входа/регистрации
